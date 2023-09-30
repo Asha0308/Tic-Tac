@@ -1,0 +1,42 @@
+/* here i makes all the elements padding and margin to set to 0 value */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box; 
+}
+/* here width 100vw and 100vh represents it takes the container width so when different screens changes it adjust to that one  */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.board {
+  width: 500px;
+  height: 500px;
+  background-color: blueviolet;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+/* here flex 33.33 persenting that it takes that much of height  bcoz above it was flex direction to be column so it takes in that flow */
+.row {
+  flex: 33.33%;
+  display: flex;
+  border: 1px solid black;
+}
+/* here the clumn flex it takes width as 33.33 percent bcoz it parents had direction flex andd flex direction in row */
+.square {
+  flex: 33.33%;
+  border: 1px solid black;
+  height: 100%;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.square:active {
+  background-color: rgb(233, 132, 244);
+}
